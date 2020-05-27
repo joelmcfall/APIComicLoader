@@ -1,0 +1,23 @@
+﻿<Window x:Class="APIComicLoader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APIComicLoader"
+        mc:Ignorable="d" Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="prevImageBtn" Click="prevImageBtn_Click" Padding="15" Margin="15 ">Previous</Button>
+            <Button x:Name="sunInfoBtn" Click="sunInfoBtn_Click" Padding="15" Margin="15 ">Sun Info</Button>
+            <Button x:Name="nextImageBtn" Click="nextImageBtn_Click" Padding="15" Margin="15 ">Next</Button>
+        </StackPanel>
+        <Image Grid.Row="1" x:Name="comicImg" />
+
+    </Grid>
+</Window>
